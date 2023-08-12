@@ -4,8 +4,26 @@
 #include <QLocale>
 #include <QTranslator>
 
+
 int main(int argc, char *argv[])
 {
+
+
+
+//
+//    HANDLE hProcess = OpenProcess(PROCESS_TERMINATE, FALSE, last);
+//    if (hProcess != NULL) {
+//        std::cout<<"kill"<<std::endl;
+//        TerminateProcess(hProcess, 0);
+//        std::cout<<"kill2"<<std::endl;
+//        CloseHandle(hProcess);
+//    }
+
+    // Закриття об'єкту процесів
+
+
+    //std::cout<<"count process: "<<count<<std::endl;
+
     QApplication a(argc, argv);
 
     QTranslator translator;
@@ -20,4 +38,5 @@ int main(int argc, char *argv[])
     MainWindow w;
     w.show();
     return a.exec();
+
 }

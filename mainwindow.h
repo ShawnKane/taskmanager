@@ -2,6 +2,13 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <iostream>
+#include <Windows.h>
+#include <TlHelp32.h>
+#include <Psapi.h>
+#include <QThread>
+#include<vector>
+#include <QTimer>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -12,7 +19,9 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
+
     MainWindow(QWidget *parent = nullptr);
+    void coutProcess();
     ~MainWindow();
 
 private:
